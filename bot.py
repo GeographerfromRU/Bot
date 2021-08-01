@@ -19,8 +19,8 @@ def help(update, context):
 
 
 def echo(update, context):
-    user_says = context
-    update.message.reply_text("You said: " + user_says)
+    user_says = update.message.text
+    update.message.reply_text(user_says)
 
 
 def error(update, context):
