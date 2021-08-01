@@ -32,6 +32,8 @@ def echo(update, context):
         update.message.reply_text("Привет брат")
     elif "Бала, привет" in user_says:
         update.message.reply_text("Привет брат")
+    elif "ты как" in user_says:
+        update.message.reply_text("Пойдет брат, ты как?")
     elif "заткните его" in user_says:
         update.message.reply_text("Слава Казахстану, героям слава")
 
