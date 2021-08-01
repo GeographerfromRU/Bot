@@ -22,7 +22,7 @@ def echo(update, context):
     user_says = update.message.text
     if "Сергей" in user_says:
         update.message.reply_text("Сергей1")
-    elif ""Эльдар" in user_says:
+    elif "Эльдар" in user_says:
         update.message.reply_text("Эльдар1")
 
 
