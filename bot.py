@@ -20,7 +20,7 @@ def help(update, context):
 def start_dialog(update, context):
     if "Сергей" in context:
         update.message.reply_text("@MarkSulla, ты работу нашел?")
-    elif "усы" in message.text:
+    elif "усы" in context:
         update.message.reply_text("@MarkSulla усы побрил?")
 
 
