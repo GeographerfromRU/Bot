@@ -37,7 +37,7 @@ def echo(update, context):
     elif "заткните его" in user_says:
         update.message.reply_text("Слава Казахстану, героям слава")
     elif "пизды дам" in user_says:
-        update.message.reply_text(https://t.me/c/1552294756/1821)
+        update.message.reply_text("https://t.me/c/1552294756/1821")
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
