@@ -19,7 +19,7 @@ def help(update, context):
 
 
 def echo(update, context):
-    user_says = " ".join(context.args)
+    user_says = context
     update.message.reply_text("You said: " + user_says)
 
 
