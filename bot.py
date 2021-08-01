@@ -45,7 +45,7 @@ def main():
 
     # Start the Bot
     updater.start_webhook(listen = "0.0.0.0", 
-                          port=PORT, 
+                          port=int(PORT),
                           url_path=TOKEN 
                           webhook_url='https://stormy-thicket-52208.herokuapp.com/' + TOKEN)
 
