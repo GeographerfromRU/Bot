@@ -19,10 +19,8 @@ def help(update, context):
 
 
 def echo(update, context):
-    """Echo the user message."""
-    msg = update.message
-    if "Сергей" in msg:
-       update.message.reply_text("dsadsaa")
+    user_says = " ".join(context.args)
+    update.message.reply_text("You said: " + user_says)
 
 
 def error(update, context):
