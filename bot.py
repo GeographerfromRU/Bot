@@ -20,7 +20,10 @@ def help(update, context):
 
 def echo(update, context):
     user_says = update.message.text
-    update.message.reply_text(user_says)
+    if "Сергей" in user_says:
+        update.message.reply_text("Сергей1")
+    elif ""Эльдар" in user_says:
+        update.message.reply_text("Эльдар1")
 
 
 def error(update, context):
