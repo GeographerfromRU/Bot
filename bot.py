@@ -23,7 +23,7 @@ def echo(update, context):
     if "Сергей" in user_says:
         update.message.reply_text("@MarkSulla, ты работу нашел?")
     elif "Эльдар" in user_says:
-        update.message.reply_text("привет бала")
+        update.message.text("привет бала")
     elif "усы" in user_says:
         update.message.reply_text("@MarkSulla усы побрил?")
     elif "Бала" in user_says:
