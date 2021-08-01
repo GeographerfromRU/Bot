@@ -34,8 +34,6 @@ def echo(update, context):
         update.message.reply_text("Привет брат")
     elif "заткните его" in user_says:
         update.message.reply_text("Слава Казахстану, героям слава")
-    elif "Казахстан" in user_says:
-        update.message.reply_text("Жаралған намыстан қаһарман халықпыз,\nАзаттық жолында жалындап жаныппыз.\nТағдырдың тезінен, тозақтың өзінен")
 
 
 def error(update, context):
