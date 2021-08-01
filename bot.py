@@ -17,6 +17,9 @@ def start(update, context):
 def help(update, context):
     update.message.reply_text('Help!')
 
+def eldar(update, context):
+    update.message.reply_text('Дарова брат')
+
 def echo(update, context):
     update.message.reply_text(update.message.text)
 
@@ -36,6 +39,7 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
+    dp.add_handler(CommandHandler("Эльдар", eldar))
 
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
