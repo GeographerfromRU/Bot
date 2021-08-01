@@ -20,7 +20,7 @@ def help(update, context):
 
 def echo(update, context):
     """Echo the user message."""
-    update.message.reply_text(update.message.text="dsadsaa")
+    update.message.reply_text(update.message.text("dsadsaa"))
 
 
 def error(update, context):
