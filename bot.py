@@ -21,9 +21,19 @@ def help(update, context):
 def echo(update, context):
     user_says = update.message.text
     if "Сергей" in user_says:
-        update.message.reply_text("Сергей1")
+        update.message.reply_text("@MarkSulla, ты работу нашел?")
     elif "Эльдар" in user_says:
-        update.message.reply_text("Эльдар1")
+        update.message.reply_text("привет бала")
+    elif "усы" in user_says:
+        update.message.reply_text("@MarkSulla усы побрил?")
+    elif "Бала" in user_says:
+        update.message.reply_text("что брат?")
+    elif "Бала привет" in user_says:
+        update.message.reply_text("Привет брат")
+    elif "Бала, привет" in user_says:
+        update.message.reply_text("Привет брат")
+    elif "заткните его" in user_says:
+        update.message.reply_text("Слава Казахстану, героям слава")
 
 
 def error(update, context):
