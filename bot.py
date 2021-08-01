@@ -17,12 +17,10 @@ def start(update, context):
 def help(update, context):
     update.message.reply_text('Help!')
 
-def start_dialog(update, context):
-    if "Сергей" in context:
-        update.message.reply_text("@MarkSulla, ты работу нашел?")
-    elif "усы" in context:
-        update.message.reply_text("@MarkSulla усы побрил?")
 
+def echo(update, context):
+    """Echo the user message."""
+    update.message.reply_text(update.message.text)
 
 
 def error(update, context):
@@ -42,7 +40,7 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
-    dp.add_handler(MessageHandler(Filters.text, start_dialog))
+    dp.add_handler(MessageHandler(Filters.text, echo))
 
     # log all errors
     dp.add_error_handler(error)
