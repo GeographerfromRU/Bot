@@ -17,14 +17,14 @@ def start(update, context):
 def help(update, context):
     update.message.reply_text('Help!')
 
-def eldar(update, context):
-    update.message.reply_text('Дарова брат')
+def start_dialog(update, context):
+    update.message.reply_text("hi1")
 
-def echo(update, context):
-    update.message.reply_text(update.message.text)
+
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
+
 
 def main():
     """Start the bot."""
@@ -39,10 +39,7 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
-    dp.add_handler(CommandHandler("eldar", eldar))
-
-    # on noncommand i.e message - echo the message on Telegram
-    dp.add_handler(MessageHandler(Filters.text, echo))
+    dp.add_handler(MessageHandler(Filters.text, start_dialog))
 
     # log all errors
     dp.add_error_handler(error)
