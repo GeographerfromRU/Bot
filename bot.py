@@ -15,20 +15,20 @@ def start(update, context):
     update.message.reply_text('Hi!')
 
 def help(update, context):
-    update.message.reply_text("'Сергей', 'Эльдар', 'усы', 'Бала', 'Бала привет','ты как','заткните его', 'пизды дам'")
+    update.message.reply_text("'Сергей', 'Эльдар', 'усы', 'Бала', 'Бала привет', 'ты как', 'заткните его', 'пизды дам'")
 
 
 def echo(update, context):
-    user_says = update.message.text
-    if "Сергей" in user_says:
+    user_says = update.message.text.lower()
+    if "сергей" in user_says:
         update.message.reply_text("@MarkSulla, ты работу нашел?")
-    elif "Эльдар" in user_says:
+    elif "эльдар" in user_says:
         update.message.reply_text("привет бала")
     elif "усы" in user_says:
         update.message.reply_text("@MarkSulla усы побрил?")
-    elif user_says == "Бала":
+    elif user_says == "бала":
         update.message.reply_text("что брат?")
-    elif user_says == "Бала привет":
+    elif user_says == "бала привет":
         update.message.reply_text("Привет брат")
     elif "ты как" in user_says:
         update.message.reply_text("Пойдет брат, ты как?")
