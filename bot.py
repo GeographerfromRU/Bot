@@ -15,7 +15,7 @@ def start(update, context):
     update.message.reply_text('Hi!')
 
 def help(update, context):
-    update.message.reply_text('Help!')
+    update.message.reply_text("'Сергей', 'Эльдар', 'усы', 'Бала', 'Бала привет','ты как','заткните его', 'пизды дам'")
 
 
 def echo(update, context):
@@ -53,7 +53,7 @@ def main():
 
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler("'Сергей', 'Эльдар', 'усы','Бала','Бала привет','ты как','заткните его', 'пизды дам'" help))
+    dp.add_handler(CommandHandler("help", help))
     dp.add_handler(MessageHandler(Filters.text, echo))
 
     # log all errors
