@@ -26,11 +26,9 @@ def echo(update, context):
         update.message.reply_text("привет бала")
     elif "усы" in user_says:
         update.message.reply_text("@MarkSulla усы побрил?")
-    elif "Бала" in user_says:
+    elif user_says == "Бала":
         update.message.reply_text("что брат?")
-    elif "Бала привет" in user_says:
-        update.message.reply_text("Привет брат")
-    elif "Бала, привет" in user_says:
+    elif user_says == "Бала привет":
         update.message.reply_text("Привет брат")
     elif "ты как" in user_says:
         update.message.reply_text("Пойдет брат, ты как?")
@@ -55,7 +53,7 @@ def main():
 
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler("help", help))
+    dp.add_handler(CommandHandler("'Сергей', 'Эльдар', 'усы','Бала','Бала привет','ты как','заткните его', 'пизды дам'" help))
     dp.add_handler(MessageHandler(Filters.text, echo))
 
     # log all errors
