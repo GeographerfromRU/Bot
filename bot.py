@@ -23,22 +23,22 @@ def echo(update, context):
     for user_say in user_says:
         if "сергей" in user_say:
             update.message.reply_text("@MarkSulla, ты работу нашел?")
-    	elif "эльдар" in user_say:
+        elif "эльдар" in user_say:
             update.message.reply_text("привет бала")
-    	elif "усы" in user_say:
+        elif "усы" in user_say:
             update.message.reply_text("@MarkSulla усы побрил?")
-    	elif user_say == "бала":
+        elif user_say == "бала":
             update.message.reply_text("что брат?")
-    	elif user_say == "бала привет":
+        elif user_say == "бала привет":
             update.message.reply_text("Привет брат")
-    	elif "ты как" in user_say:
+        elif "ты как" in user_say:
             update.message.reply_text("Пойдет брат, ты как?")
-    	elif "заткните его" in user_say:
+        elif "заткните его" in user_say:
             update.message.reply_text("Слава Казахстану, героям слава")
-    	elif "пизды дам" in user_say:
+        elif "пизды дам" in user_say:
             update.message.reply_text("https://t.me/c/1552294756/1821")
-	elif "user_says" in user_say:
-	    update.message.reply_text(user_say)
+        elif "user_says" in user_say:
+            update.message.reply_text(user_say)
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
