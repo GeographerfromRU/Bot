@@ -19,27 +19,32 @@ def help(update, context):
 
 
 def echo(update, context):
-    user_says = update.message.text.lower().split()
-    user_says = set(user_says)
-    for user_say in user_says:
-        if "сергей" in user_say:
-            update.message.reply_text("@MarkSulla, ты работу нашел?")
-        elif "эльдар" in user_say:
-            update.message.reply_text("привет бала")
-        elif "усы" in user_say:
-            update.message.reply_text("@MarkSulla усы побрил?")
-        elif user_say == "бала":
-            update.message.reply_text("что брат?")
-        elif user_say == "бала привет":
-            update.message.reply_text("Привет брат")
-        elif "ты как" in user_say:
-            update.message.reply_text("Пойдет брат, ты как?")
-        elif "заткните его" in user_say:
-            update.message.reply_text("Слава Казахстану, героям слава")
-        elif "пизды дам" in user_say:
-            update.message.reply_text("https://t.me/c/1552294756/1821")
-        elif "user_says" in user_say:
-            update.message.reply_text(user_say)
+    user_says = update.message.text.lower()
+
+    if "сергей" in user_says:
+        update.message.reply_text("@MarkSulla, ты работу нашел?")
+    elif "эльдар" in user_says:
+        update.message.reply_text("привет бала")
+    elif "усы" in user_says:
+        update.message.reply_text("@MarkSulla усы побрил?")
+    elif user_says == "бала":
+        update.message.reply_text("что брат?")
+    elif user_says == "бала привет":
+        update.message.reply_text("Привет брат")
+    elif "ты как" in user_says:
+        update.message.reply_text("Пойдет брат, ты как?")
+    elif "заткните его" in user_says:
+        update.message.reply_text("Слава Казахстану, героям слава")
+    elif "как сам" in user_says:
+        update.message.reply_text('Как джип Ниссан')
+    elif "бля" in user_says:
+        update.message.reply_text('А я ему такой: а ты че бля')
+    elif "пизды дам" in user_says:
+        update.message.reply_audio(audio = 'https://psv4.userapi.com/c533532//u30232103/audiomsg/d16/94e420b470.ogg')
+    elif "спокойной ночи" in user_says:
+        update.message.reply_audio(audio = 'https://psv4.userapi.com/c533336//u30232103/audiomsg/d13/2d57770894.ogg')
+    elif "user_says" in user_says:
+        update.message.reply_text(user_says)
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
