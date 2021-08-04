@@ -20,6 +20,7 @@ def help(update, context):
 
 def echo(update, context):
     user_says = update.message.text.lower().split()
+    user_says = set(user_says)
     for user_say in user_says:
         if "сергей" in user_say:
             update.message.reply_text("@MarkSulla, ты работу нашел?")
