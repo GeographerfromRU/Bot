@@ -18,7 +18,7 @@ def start(update, context):
     update.message.reply_text('Шалом')
 
 def help(update, context):
-    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- тебя")
+    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- тебя ебет")
 
 
 def echo(update, context):
