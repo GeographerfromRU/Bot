@@ -18,7 +18,7 @@ def start(update, context):
     update.message.reply_text('Шалом')
 
 def help(update, context):
-    update.message.reply_text("- Сергей/n- Эльдар/n- Усы/n- Бала/n- Бала привет/n- Ты как/n- Заткните его/n- Пизды дам")
+    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- как сам\n- бля\n- спокойной ночи\n- московские\n- петровские\n- тебя")
 
 
 def echo(update, context):
@@ -50,8 +50,10 @@ def echo(update, context):
         update.message.reply_video(video = open('./content/moscowskie.mp4', 'rb'))
     elif "ибрагим" in user_says:
         update.message.reply_video(video = open('./content/ibragim.mp4', 'rb'))
-    elif "user_says" in user_says:
-        update.message.reply_text(user_says)
+    elif "петровские" in user_says:
+        update.message.reply_video(video = open('./content/petrovskie.mp4', 'rb'))
+    elif "тебя ебет" in user_says:
+        update.message.reply_video(video = open('./content/tebya_ebet.mp4', 'rb'))
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
@@ -71,6 +73,7 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(MessageHandler(Filters.text, echo))
+
 
     # log all errors
     dp.add_error_handler(error)
