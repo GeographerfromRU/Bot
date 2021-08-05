@@ -18,7 +18,7 @@ def start(update, context):
     update.message.reply_text('Шалом')
 
 def help(update, context):
-    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- тебя ебет")
+    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- Тебя ебет\n- Ибрагим")
 
 
 def echo(update, context):
@@ -49,7 +49,7 @@ def echo(update, context):
     elif "московские" in user_says:
         update.message.reply_video(video = open('./content/moscowskie.mp4', 'rb'))
     elif "ибрагим" in user_says:
-        update.message.reply_video(video = open('./content/ibragim.mp4', 'rb'))
+        update.message.reply_video(video = open('./content/Ibragim.mp4', 'rb'))
     elif "петровские" in user_says:
         update.message.reply_video(video = open('./content/petrovskie.mp4', 'rb'))
     elif "тебя ебет" in user_says:
