@@ -15,10 +15,10 @@ logger = logging.getLogger(__name__)
 TOKEN = '1906828102:AAFpGRVV5t27ywJnV8C4oELGrf37qRo8nRI'
 
 def start(update, context):
-    update.message.reply_text('Hi!')
+    update.message.reply_text('Шалом')
 
 def help(update, context):
-    update.message.reply_text("'Сергей', 'Эльдар', 'усы', 'Бала', 'Бала привет', 'ты как', 'заткните его', 'пизды дам'")
+    update.message.reply_text("- Сергей/n- Эльдар/n- Усы/n- Бала/n- Бала привет/n- Ты как/n- Заткните его/n- Пизды дам")
 
 
 def echo(update, context):
