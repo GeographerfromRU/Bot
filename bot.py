@@ -1,5 +1,8 @@
 import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram import File
+from telegram.utils.types import FileInput
+from pathlib import Path
 import os
 
 PORT = int(os.environ.get('PORT', 8443))
@@ -43,6 +46,8 @@ def echo(update, context):
         update.message.reply_audio(audio = 'https://psv4.userapi.com/c533532//u30232103/audiomsg/d16/94e420b470.ogg')
     elif "спокойной ночи" in user_says:
         update.message.reply_audio(audio = 'https://psv4.userapi.com/c533336//u30232103/audiomsg/d13/2d57770894.ogg')
+    elif "московские" in user_says:
+        update.message.reply_video(video = open('./content/moscowskie.mp4', 'rb'))
     elif "user_says" in user_says:
         update.message.reply_text(user_says)
 
