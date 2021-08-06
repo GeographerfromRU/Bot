@@ -18,10 +18,10 @@ def start(update, context):
     update.message.reply_text('Шалом')
 
 def help(update, context):
-    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- Тебя ебет\n- Ибрагим")
+    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- Тебя ебет\n- Ибрагим\n- Нет")
 
 
-def echo(update, context):
+def echo(update, context):\n- Ибрагим
     user_says = update.message.text.lower()
 
     if "сергей" in user_says:
@@ -46,6 +46,8 @@ def echo(update, context):
         update.message.reply_audio(audio = 'https://psv4.userapi.com/c533532//u30232103/audiomsg/d16/94e420b470.ogg')
     elif "спокойной ночи" in user_says:
         update.message.reply_audio(audio = 'https://psv4.userapi.com/c533336//u30232103/audiomsg/d13/2d57770894.ogg')
+    elif "нет" in user_says:
+        update.message.reply_audio(audio = 'https://psv4.userapi.com/c524032//u106271634/audiomsg/d30/99251d4b9c.ogg')
     elif "московские" in user_says:
         update.message.reply_video(video = open('./content/moscowskie.mp4', 'rb'))
     elif "ибрагим" in user_says:
