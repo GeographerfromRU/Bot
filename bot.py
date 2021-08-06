@@ -21,9 +21,8 @@ def help(update, context):
     update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- Тебя ебет\n- Ибрагим\n- Нет")
 
 
-def echo(update, context):\n- Ибрагим
+def echo(update, context):
     user_says = update.message.text.lower()
-
     if "сергей" in user_says:
         update.message.reply_text("@MarkSulla, ты работу нашел?")
     elif "эльдар" in user_says:
