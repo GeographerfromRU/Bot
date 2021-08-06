@@ -41,6 +41,8 @@ def echo(update, context):
         update.message.reply_text('Как джип Ниссан')
     elif "бля" in user_says:
         update.message.reply_text('А я ему такой: а ты че бля')
+    elif "подкат" in user_says:
+        update.message.reply_text('Один подкат, и ты киткат')
     elif "пизды дам" in user_says:
         update.message.reply_audio(audio = 'https://psv4.userapi.com/c533532//u30232103/audiomsg/d16/94e420b470.ogg')
     elif "спокойной ночи" in user_says:
