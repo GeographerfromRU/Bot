@@ -18,7 +18,7 @@ def start(update, context):
     update.message.reply_text('Шалом')
 
 def help(update, context):
-    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- Тебя ебет\n- Ибрагим\n- Нет")
+    update.message.reply_text("- Сергей\n- Эльдар\n- Усы\n- Бала\n- Бала привет\n- Ты как\n- Заткните его\n- Пизды дам\n- Как сам\n- Бля\n- Спокойной ночи\n- Московские\n- Петровские\n- Тебя ебет\n- Ибрагим\n- Нет\n- Ручная кладь\n- Куда деваться")
 
 
 def echo(update, context):
@@ -59,6 +59,8 @@ def echo(update, context):
         update.message.reply_video(video = open('./content/tebya_ebet.mp4', 'rb'))
     elif "ручная кладь" in user_says:
         update.message.reply_photo(photo = open('./content/Petrov.jpg', 'rb'))
+    elif "куда деваться" in user_says:
+        update.message.reply_photo(photo = open('./content/Nekuda_devatsya.mp3', 'rb'))
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
