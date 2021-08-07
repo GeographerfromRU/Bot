@@ -57,6 +57,9 @@ def echo(update, context):
         update.message.reply_video(video = open('./content/petrovskie.mp4', 'rb'))
     elif "тебя ебет" in user_says:
         update.message.reply_video(video = open('./content/tebya_ebet.mp4', 'rb'))
+    elif "ручная кладь" in user_says:
+        update.message.reply_text('Дарова бандиты')
+        update.message.reply_photo(photo = open('./content/Petrov.jpg'))
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
