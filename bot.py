@@ -60,7 +60,7 @@ def echo(update, context):
     elif "ручная кладь" in user_says:
         update.message.reply_photo(photo = open('./content/Petrov.jpg', 'rb'))
     elif "куда деваться" in user_says:
-        update.message.reply_photo(photo = open('./content/Nekuda_devatsya.mp3', 'rb'))
+        update.message.reply_audio(audio = open('./content/Nekuda_devatsya.mp3', 'rb'))
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
