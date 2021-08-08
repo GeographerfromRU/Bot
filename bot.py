@@ -61,6 +61,8 @@ def echo(update, context):
         update.message.reply_photo(photo = open('./content/Petrov.jpg', 'rb'))
     elif "куда деваться" in user_says:
         update.message.reply_audio(audio = open('./content/Nekuda_devatsya.mp3', 'rb'))
+    elif 'семья' in user_says or 'семью' in user_says or 'семьи' in user_says:
+        update.message.reply_video(video = open('./content/toretto.mp4', 'rb'))
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
@@ -85,11 +87,8 @@ def main():
     # log all errors
     dp.add_error_handler(error)
 
+    updater.start_polling()
     # Start the Bot
-    updater.start_webhook(listen = "0.0.0.0", 
-                          port=int(PORT),
-                          url_path=TOKEN,
-                          webhook_url='https://stormy-thicket-52208.herokuapp.com/' + TOKEN)
 
     # Run the bot until you press Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT. This should be used most of the time, since
