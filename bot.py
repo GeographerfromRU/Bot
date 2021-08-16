@@ -51,6 +51,8 @@ def echo(update, context):
         update.message.reply_audio(audio = 'https://psv4.userapi.com/c524032//u106271634/audiomsg/d30/99251d4b9c.ogg')
     elif "московские" in user_says:
         update.message.reply_video(video = open('./content/moscowskie.mp4', 'rb'))
+    elif "московская" in user_says:
+        update.message.reply_audio(audio = open('./content/dead_inside.mp3', 'rb'))
     elif "ибрагим" in user_says:
         update.message.reply_video(video = open('./content/Ibragim.mp4', 'rb'))
     elif "петровские" in user_says:
