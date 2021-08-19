@@ -65,6 +65,8 @@ def echo(update, context):
         update.message.reply_audio(audio = open('./content/Nekuda_devatsya.mp3', 'rb'))
     elif 'семья' in user_says or 'семью' in user_says or 'семьи' in user_says:
         update.message.reply_video(video = open('./content/toretto.mp4', 'rb'))
+    elif 'зачарованные' in user_says or 'зачарованных' in user_says:
+        update.message.reply_video(video = open('./content/charmed.mp4', 'rb'))
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
